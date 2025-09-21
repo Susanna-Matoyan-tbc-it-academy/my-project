@@ -10,7 +10,7 @@
     <p>
       Welcome to the <b>Portal.</b> This page demonstrates only the requested
       tags — no CSS, no scripts. Use the navigation below or the
-      <a href="#">special anchor #p5</a> to jump
+      <a href="#p5">special anchor #p5</a> to jump
       <small>(All formatting is purely semantic.)</small>
     </p>
     <hr />
@@ -24,7 +24,7 @@
       <li><a href="#">Jump to #p5</a></li>
     </ul>
     <hr />
-    <h3>Introduction</h3>
+    <h3  id="p1">Introduction</h3>
     <p>
       This is a short demo of inline and block elements. For example, an inline
       quotation: "HTML is about meaning, not looks." You can also force a line
@@ -56,20 +56,19 @@
       <li>Inline containers with <b>&lt;span&gt;</b></li>
     </ul>
     <h4>Definitions:</h4>
-  <p>
-    <b>Semantic</b><br>
-    <blockquote>
-      Markup that conveys meaning, not appearance.
-    </blockquote>
-  </p>
+  
+  <dl>
+  <dt> <b> Semantic </b></dt>
+  <dd>Markup that conveys meaning, not appearance.</dd>
+ 
+  <dt> <b>Inline </b></dt>
+  <dd>
+    Elements that flow within a line, like <q>q</q>, <b>b</b>, and <i>i</i>.
+  </dd>
+</dl>
 
-  <span>
-    <b>Inline</b><br>
-    <blockquote>
-      Elements that flow within a line, like <q>q</q>, <b>b</b>, and <i>i</i>.
-    </blockquote>
-  </span>
-    <hr>
+
+     <hr>
       <h4>Useful Links</h4>
     <span>TEXT LINK: <a href="#">Visit Example.org</a> (opens in new tab)</span>
     <br />
