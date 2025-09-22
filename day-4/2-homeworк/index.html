@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tell us about your project</h1>
+    <p>fill this brief. We'll get back to you with ideas, timing and a ballpark estimate</p>
+
+    <form action="/submit-here" method="post" accept-charset="UTF-8" autocomplete="on" target="_self"></form>
+     <fieldset>
+            <legend>Who are you</legend>
+          <label>First name *
+              <input name="first_name" required placeholder="Alex" autocomplete="given-name">
+          </label>
+          <br>
+          <label>Last name *
+              <input name="last_name" required placeholder="Rivera" autocomplete="family-name">
+          </label>
+          <br>
+          <label>Email *
+              <input name="email" type="email" required placeholder="you@domain.com" autocomplete="email">
+          </label>
+          <br>
+          <label>Phone *
+              <input name="Phone" type="tel" required placeholder="(555) 555-1212" autocomplete="tel">
+          </label>
+          <br>
+          <p>Optional-but helpful if we need a quick question answerd.</p>
+         </fieldset>
+
+          <fieldset>
+            <legend>Project basics</legend>
+          <label>Current website or domain
+              <input name="website" type="url" required placeholder="https://example.com" autocomplete="url">
+          </label>
+          <br>
+          <label>Address
+              <input type="text" name="street" autocomplete="street-address">
+          </label>
+          <br>
+     </label>City
+          <input id="city" name="city" list="cities" placeholder="City">
+            <datalist id="cities">
+                <option value="Tbilisi">
+                <option value="Adjara">
+                <option value="Imereti">
+                <option value="Kakheti">
+            </datalist>
+            <br>
+                State / Region
+    <select name="region" autocomplete="address-level1">
+      <option value="">Please choose…</option>
+      <option value="Tbilisi">Tbilisi</option>
+      <option value="Adjara">Adjara</option>
+      <option value="Imereti">Imereti</option>
+      <option value="Kakheti">Kakheti</option>
+    </select>
+  </label>
+    <br>
+      <label>
+    Zip / Postal code
+    <input type="text" name="postal-code" autocomplete="postal-code" placeholder="1234">
+  </label>
+  <br>
+
+  <label>
+    Ideal launch date
+    <input type="date" name="launch-date">
+  </label>
+          <p>Optional-but helpful if we need a quick question answerd.</p>
+         </fieldset>
+         <fieldset>
+            <legend>Preferences</legend>
+            <span>Estimated budget (move the slider)</span><br>
+            <input type="range">
+             <h3>Do you already have hosting? *</h3>
+            <label><input type="radio" name="answer" value="Yes"> Yes</label>
+            <label><input type="radio" name="answer" value="No"> No</label>
+            <label><input type="radio" name="answer" value="Not crue"> Not crue</label>
+             <h3>Preferred contact method *</h3>
+            <label><input type="radio" name="contact" value="email"> Email</label>
+            <label><input type="radio" name="contact" value="phone"> Phone</label>
+            <label><input type="radio" name="contact" value="video call"> Video call</label>
+         </fieldset>
+         <fieldset>
+            <legend>Project description</legend>
+               <label>Describe your project *
+      <textarea name="project" rows="2" cols="20" placeholder="Tell us what you’re building, who it’s "></textarea></label>
+      <p>Good prompts: goals, audience, 3–5 features, inspiration links.</p> 
+         </fieldset>
+           <input type="checkbox" id="agree" name="agree" required>
+      <label for="agree">I agree to be contacted about this inquiry *</label><br><br>
+
+      <button type="reset">Reset</button>
+      <button type="submit">Send request</button>
+     </form>
+</body>
+</html>
