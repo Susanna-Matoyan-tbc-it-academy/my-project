@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Participant Form</title>
+  </head>
+  <body>
+    <h2>Participant</h2>
+    <form
+      action="/submit-here"
+      method="post"
+      accept-charset="UTF-8"
+      autocomplete="on"
+      target="_self"
+    >
+      <label for="first_name">First name *</label>
+      <input id="first_name" name="first_name" required autocomplete="given-name" />
+      <br />
+
+      <label for="last_name">Last name *</label>
+      <input id="last_name" name="last_name" required autocomplete="family-name" />
+      <br />
+
+      <label for="email">Email *</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="you@example.com"
+        autocomplete="email"
+        required
+      />
+      <br />
+
+      <label for="studentid">Student ID *</label>
+      <input
+        id="studentid"
+        name="studentid"
+        placeholder="TBC-2025-1234"
+        required
+      />
+      <br /><br />
+      <span>Format: TBC-2025-0000</span>
+      <br /><br />
+
+      <label for="phone">Phone</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="+995 555 12 34 56"
+        autocomplete="tel"
+      />
+      <br />
+
+      <label for="city">City (type to search)</label>
+      <input
+        type="search"
+        id="city"
+        name="city"
+        placeholder="Start typing…"
+        autocomplete="address-level2"
+      />
+      <br />
+
+      <h2>Workshop Preferences</h2>
+      <p>Track *</p>
+      <label><input type="radio" name="track" value="html" required /> HTML Essentials</label>
+      <label><input type="radio" name="track" value="css" /> CSS Layouts</label>
+      <label><input type="radio" name="track" value="js" /> Vanilla JS</label>
+      <br />
+
+      <label for="skills">Current skills (hold Ctrl to choose multiple)</label>
+      <select id="skills" name="skills" size="5" multiple>
+        <option>Semantics</option>
+        <option>Forms</option>
+        <option>Flexbox</option>
+        <option>Grid</option>
+        <option>Accessibility</option>
+      </select>
+      <br />
+
+      <label for="portfolio">Portfolio link</label>
+      <input
+        type="url"
+        id="portfolio"
+        name="portfolio"
+        placeholder="https://…"
+        autocomplete="url"
+      />
+      <br /><br />
+
+      <p>Optional, but helpful</p>
+      <br />
+
+      <label for="date">Preferred date *</label>
+      <input type="date" id="date" name="preferred_date" required />
+      <br />
+
+      <label for="time">Preferred start time</label>
+      <input type="time" id="time" name="preferred_time" />
+      <br />
+
+      <label for="prework">Upload pre-work (PDF/PNG, max 5MB)</label>
+      <input type="file" id="prework" name="prework_file" accept=".pdf,.png" />
+      <br />
+
+      <label for="confidence">Confidence level</label>
+      <input type="range" id="confidence" name="confidence_level" />
+      <br />
+
+      <h2>Notes</h2>
+      <label for="learnMost">What would you like to learn most?</label>
+      <textarea
+        id="learnMost"
+        name="userNotes"
+        placeholder="Tell us about your goals, blockers, and any accommodations you need."
+      ></textarea>
+      <br />
+
+      <input type="checkbox" id="contactConsent" name="contactConsent" value="yes" required />
+      <label for="contactConsent">I agree to be contacted about my registration *</label>
+      <br />
+
+      <input type="checkbox" id="codeConduct" name="codeConduct" value="agreed" required />
+      <label for="codeConduct">I agree to the code of conduct *</label>
+      <br /><br />
+
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit registration" />
+    </form>
+  </body>
+</html>
