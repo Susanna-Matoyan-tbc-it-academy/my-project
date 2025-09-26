@@ -1,0 +1,41 @@
+
+#main-header {
+  background-color: #4a90e2; 
+  padding: 15px 0;
+  border-bottom: 3px solid #357ABD;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+
+#main-header a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+
+#main-header a:hover {
+  color: #ffcc00; 
+  text-decoration: underline;
+}
+
+
+#main-header td:first-child a {
+  font-size: 0.95em;
+}
+
+
+#main-header td:last-child a {
+  font-weight: bold;
+  color: #fff;
+}
+
+#main-header table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#main-header td {
+  padding: 0 10px;
+}
