@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+
+}
+
+
+.img-large {
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
+
+#main-header {
+  text-align: center;
+  color: #004080;
+  padding: 20px 0;
+}
+
+
+main h2 {
+  color: #0066cc;
+  margin-top: 30px;
+}
+
+
+footer > p {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+
+h2 + a img {
+  display: block;
+  margin: 10px 0;
+}
+
+
+h2 ~ p {
+  margin-left: 20px;
+  color: #333;
+}
+
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+p:first-child {
+  font-weight: bold;
+}

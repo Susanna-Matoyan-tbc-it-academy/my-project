@@ -1,0 +1,58 @@
+
+h1 {
+  color: darkblue;
+  text-transform: uppercase;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+
+#main-header {
+  background: #eee;
+  padding: 15px;
+  text-align: center;
+}
+
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: darkgreen;
+}
+
+
+section > p {
+  font-size: 14px;
+  color: #444;
+}
+
+
+h2 + a {
+  display: inline-block;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+
+h2 ~ p {
+  color: #555;
+  font-style: italic;
+}
+
+
+a:hover {
+  color: red;
+}
+
+a:visited {
+  color: purple;
+}
+
+button:active {
+  background: green;
+  color: white;
+}
