@@ -1,0 +1,74 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f7fa; /* светлый фон */
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+
+.profile-pic {
+  border: 3px solid #007acc;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+
+#main-header {
+  background-color: #007acc;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+main h1 {
+  color: #222;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+footer > p {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+
+img + figcaption {
+  text-align: center;
+  font-weight: bold;
+  color: #007acc;
+  margin-bottom: 15px;
+}
+
+
+h1 ~ p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  padding: 0 10px;
+}
+
+
+a:hover {
+  color: #005f99;
+  text-decoration: underline;
+}
+
+p:first-child {
+  font-weight: bold;
+  color: #333;
+}

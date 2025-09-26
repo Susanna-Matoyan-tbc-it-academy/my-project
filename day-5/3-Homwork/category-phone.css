@@ -1,0 +1,65 @@
+body {
+  font-family: 'Verdana', sans-serif;
+
+
+}
+
+.img-large {
+  border: 3px dashed #ff6600;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+
+.img-large:hover {
+  transform: scale(1.05);
+}
+
+
+#main-header {
+  text-align: left; 
+  color: blue; 
+  padding: 15px 30px;
+  border-bottom: 2px solid #ff6600;
+}
+
+
+main h2 {
+  color: #ff9933;
+  margin-top: 25px;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+
+footer > p {
+  text-align: center;
+  font-size: 13px;
+  color: #999;
+  font-style: italic;
+}
+
+
+h2 + a img {
+  display: block;
+  margin: 5px 0 15px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+h2 ~ p {
+  margin-left: 15px;
+  color: #555;
+  line-height: 1.4;
+}
+
+
+a:hover {
+  color: #ff3300;
+  text-decoration: none;
+}
+
+p:first-child {
+  font-weight: bold;
+  color: blue;
+}
