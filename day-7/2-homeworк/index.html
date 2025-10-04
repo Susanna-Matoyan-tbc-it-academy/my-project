@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="btn-text btn-text-content1">
+          <h2 class="logo">FLEXBOARD</h2>
+          <br />
+          <span>View:</span>
+          <div class="btn-div btn-content1">
+            <button class="active1">Board</button>
+            <button class="btn">List</button>
+            <button class="btn">Timeline</button>
+          </div>
+        </div>
+
+        <div class="btn-text">
+          <span>Group by:</span>
+          <div class="btn-div btn-content2">
+            <button class="active">Status</button>
+            <button class="btn">Owner</button>
+            <button class="btn">Priority</button>
+          </div>
+          <div>
+            <button class="button">Invite</button>
+            <button class="blue">New Board</button>
+          </div>
+        </div>
+      </div>
+
+      <main class="main">
+        <div class="main-div">
+          <aside class="aside">
+            <div class="sidebar">
+              <h2 class="h2-main">Navigation</h2>
+
+              <nav class="nav-content">
+                <span class="main-li">
+                  <span class="main-span">
+                    <img
+                      src="./svg/dashboard.svg"
+                      alt="Dashboard"
+                      width="10px"
+                      height="15px"
+                    />
+                    Dashboard
+                  </span>
+                </span>
+
+                <span>
+                  <span class="spans">
+                    <img
+                      src="./svg/board.svg"
+                      alt="Board"
+                      width="14px"
+                      height="15px"
+                    />
+                    Board
+                  </span>
+                </span>
+
+                <span>
+                  <span class="spans">
+                    <img
+                      src="./svg/backlog.svg"
+                      alt="Backlog"
+                      width="14px"
+                      height="15px"
+                    />
+                    Backlog
+                  </span>
+                </span>
+
+                <span>
+                  <span class="spans">
+                    <img
+                      src="./svg/sprints.svg"
+                      alt="Sprints"
+                      width="14px"
+                      height="15px"
+                    />
+                    Sprints
+                  </span>
+                </span>
+
+                <span>
+                  <span class="spans">
+                    <img
+                      src="./svg/reports.svg"
+                      alt="Reports"
+                      width="14px"
+                      height="15px"
+                    />
+                    Reports
+                  </span>
+                </span>
+
+                <span style="margin-top: 2px">
+                  <span class="spans">
+                    <img
+                      src="./svg/settings.svg"
+                      alt="Settings"
+                      width="14px"
+                      height="15px"
+                    />
+                    Settings
+                  </span>
+                </span>
+              </nav>
+            </div>
+          </aside>
+
+          <div class="main-card-div">
+            <div class="main-section">
+              <div class="section-div1">
+                <h2 class="projects">Projects</h2>
+                <span class="items">42 items</span>
+              </div>
+
+              <div class="section-div2">
+                <div class="inner-div1">
+                  <img
+                    src="./svg/lupa.svg"
+                    width="16px"
+                    height="16px"
+                    style="margin-left: 10px"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    class="section-input"
+                  />
+                </div>
+
+                <div class="inner-div2">
+                  <span>Assignee</span>
+                  <img
+                    src="./svg/arrow.svg"
+                    alt="Arrow"
+                    width="24px"
+                    height="24px"
+                  />
+                </div>
+
+                <div class="inner-div3">
+                  <button class="all-but">All</button>
+                  <button class="activ-but">Active</button>
+                  <button class="done-but">Done</button>
+                </div>
+
+                <button class="export-but">Export</button>
+              </div>
+
+              <div class="Card-Div">
+                <div class="card">
+                  <div class="div-color"></div>
+                  
+                  <div class="card-title">
+                    <h2>Alpha</h2>
+                    <span>12 tasks</span>
+                  </div>
+                  <p>
+                    Description of the project that may be <br />
+                    longer than the card width.
+                  </p>
+                  <div class="Card-button">
+                    <button class="btn-front">Frontend</button>
+                    <button class="btn-High">Priority: High</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="div-color"></div>
+                  <div class="card-title">
+                    <h2>Beta</h2>
+                    <span>7 tasks</span>
+                  </div>
+                  <p>
+                    Short note about Beta.
+                  </p>
+                  <div class="Card-button">
+                    <button class="btn-front">Frontend</button>
+                    <button class="btn-High">Priority: High</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="div-color"></div>
+                  <div class="card-title">
+                    <h2>Gamma</h2>
+                    <span>23 tasks</span>
+                  </div>
+                  <p>
+                    Exploratory work and research.
+                  </p>
+                  <div class="Card-button">
+                    <button class="btn-front">Frontend</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="div-color"></div>
+                  <div class="card-title">
+                    <h2>Delta</h2>
+                    <span>4 tasks</span>
+                  </div>
+                  <p>
+                   A brief blurb with more context on scope and risks.
+                  </p>
+                  <div class="Card-button">
+                    <button class="btn-front">Frontend</button>
+                    <button class="btn-High">Priority: High</button>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials-div">
+                <div class="testimonial1">
+                  <div class="testimonials-inner">
+                    <div class="help-div">
+                      <div class="camera">
+                        <img src="./svg/zoom.svg" alt="camera" />
+                      </div>
+                      <div class="testimonials-p">
+                        <span class="test-span-1"
+                          >Weekly Standup Recording</span
+                        >
+                        <span class="test-span-2"
+                          >Notes: refactor auth flow,roll out A/B test to 10% of
+                          traffic, monitor error spikes...</span
+                        >
+                      </div>
+                    </div>
+                    <div style="margin-left: 105px">
+                      <button class="open-but">Open</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial1">
+                  <div class="testimonials-inner">
+                    <div class="help-div">
+                      <div class="camera">
+                        <img src="./svg/desing.svg" alt="camera" />
+                      </div>
+                      <div class="testimonials-p">
+                        <span class="test-span-1">Design Review</span>
+                        <span class="test-span-2"
+                          >Action items: icon pass, empty states, progressive
+                          disclosure on settings panel.</span
+                        >
+                      </div>
+                    </div>
+                    <div style="margin-left: 105px">
+                      <button class="open-but">Open</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-team">
+              <div class="time-title">
+                <h2>Insights</h2>
+                <span>This week</span>
+              </div>
+              <div class="card-Quick">
+                <div>
+                  <h2 class="h2-quick">Quick Filters</h2>
+                </div>
+                <div>
+                  <button class="first-btn-card">Mine</button>
+                  <button class="btn-time" style="height: 34px; width: 104px">
+                    Unassigned
+                  </button>
+                  <button class="btn-time" style="height: 34px; width: 83px">
+                    Overdue
+                  </button>
+                  <button class="btn-time" style="height: 34px; width: 80px">
+                    Blocked
+                  </button>
+                  <button class="btn-time" style="height: 34px; width: 144px">
+                    Recently Updated
+                  </button>
+                </div>
+              </div>
+              <div class="Team">
+                <h2 class="team-h2">Team</h2>
+                <div class="pinck-div">
+                  <div class="green-content">
+                    <div class="pinck"></div>
+                    <div class="text-team-card">
+                      <h2>Alex</h2>
+                      <span>3 items due today</span>
+                    </div>
+                  </div>
+                  <button>ping</button>
+                </div>
+                <div class="green-div">
+                  <div class="green-content">
+                    <div class="green"></div>
+                    <div class="text-team-card">
+                      <h2>Jordan</h2>
+                      <span>Out of office t...</span>
+                    </div>
+                  </div>
+                  <button>ping</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer">
+        <p> © 2025 Flexboard Inc</p>
+         <p>Made with pure Flexbox</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
