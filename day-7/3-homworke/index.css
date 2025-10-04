@@ -1,5 +1,103 @@
-.container{
-    width: 500px;
-    height: 700px;
-    border: 1px solid black;
-}
+   body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    
+    .modal {
+      position: fixed;
+      width: 510px;
+      height: 390px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      padding: 25px;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      margin-left: -200px; 
+      margin-top: -200px;  
+      
+    }
+
+    
+    .close-btn {
+      position: absolute;
+      top: 17px;
+      right: 25px;
+      font-size: 28px;
+      font-weight: bold;
+      color: #555;
+      cursor: pointer;
+    }
+
+
+    .badge {
+      position: absolute;
+      top: -15px;
+      left: -12px;
+      background: coral;
+      color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 20px;
+      width: 40px;
+      height: 20px;
+    }
+
+    
+
+
+    .image-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .image-container img {
+      width: 500px;
+      height: 250px;
+      margin-left: 10px;
+    }
+    
+
+    
+    .caption {
+      position: absolute;
+      bottom: 20px;
+      left: 22px;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 137px;
+    }
+
+    img{
+         filter: brightness(50%);
+    }
+
+
+    p{
+         font-size: 18px;
+        margin-bottom: 25px;
+        margin-left: 10px;
+    }
+
+    h2{
+        font-size: 28px;
+        margin-left: 10px;
+        margin-top: 32px;
+    }
