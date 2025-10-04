@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -118,37 +124,49 @@
 
           <div class="main-card-div">
             <div class="main-section">
-              <div class="main-title">
-                <h2>Projects</h2>
-                <span>42 items</span>
+              <div class="section-div1">
+                <h2 class="projects">Projects</h2>
+                <span class="items">42 items</span>
               </div>
-              <div class="input-container">
-                <div class="input">
-                  <img src="./svg/lupa.svg" alt="" />
-                  <input type="text" />
-                </div>
-                <div class="input-element">
-                  <div class="input-arrow">
-                    <p>Assignee</p>
-                    <img
-                      src="./svg/arrow.svg"
-                      alt=""
-                      width="20px"
-                      height="20px"
-                    />
-                  </div>
 
-                  <div class="btn-div btn-content2">
-                    <button class="active">Status</button>
-                    <button class="btn">Owner</button>
-                    <button class="btn">Priority</button>
-                  </div>
+              <div class="section-div2">
+                <div class="inner-div1">
+                  <img
+                    src="./svg/lupa.svg"
+                    width="16px"
+                    height="16px"
+                    style="margin-left: 10px"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Search..."
+                    class="section-input"
+                  />
                 </div>
+
+                <div class="inner-div2">
+                  <span>Assignee</span>
+                  <img
+                    src="./svg/arrow.svg"
+                    alt="Arrow"
+                    width="24px"
+                    height="24px"
+                  />
+                </div>
+
+                <div class="inner-div3">
+                  <button class="all-but">All</button>
+                  <button class="activ-but">Active</button>
+                  <button class="done-but">Done</button>
+                </div>
+
+                <button class="export-but">Export</button>
               </div>
 
               <div class="Card-Div">
                 <div class="card">
                   <div class="div-color"></div>
+                  
                   <div class="card-title">
                     <h2>Alpha</h2>
                     <span>12 tasks</span>
@@ -166,12 +184,11 @@
                 <div class="card">
                   <div class="div-color"></div>
                   <div class="card-title">
-                    <h2>Alpha</h2>
-                    <span>12 tasks</span>
+                    <h2>Beta</h2>
+                    <span>7 tasks</span>
                   </div>
                   <p>
-                    Description of the project that may be <br />
-                    longer than the card width.
+                    Short note about Beta.
                   </p>
                   <div class="Card-button">
                     <button class="btn-front">Frontend</button>
@@ -182,12 +199,11 @@
                 <div class="card">
                   <div class="div-color"></div>
                   <div class="card-title">
-                    <h2>Alpha</h2>
-                    <span>12 tasks</span>
+                    <h2>Gamma</h2>
+                    <span>23 tasks</span>
                   </div>
                   <p>
-                    Description of the project that may be <br />
-                    longer than the card width.
+                    Exploratory work and research.
                   </p>
                   <div class="Card-button">
                     <button class="btn-front">Frontend</button>
@@ -197,12 +213,11 @@
                 <div class="card">
                   <div class="div-color"></div>
                   <div class="card-title">
-                    <h2>Alpha</h2>
-                    <span>12 tasks</span>
+                    <h2>Delta</h2>
+                    <span>4 tasks</span>
                   </div>
                   <p>
-                    Description of the project that may be <br />
-                    longer than the card width.
+                   A brief blurb with more context on scope and risks.
                   </p>
                   <div class="Card-button">
                     <button class="btn-front">Frontend</button>
@@ -210,52 +225,108 @@
                   </div>
                 </div>
               </div>
+              <div class="testimonials-div">
+                <div class="testimonial1">
+                  <div class="testimonials-inner">
+                    <div class="help-div">
+                      <div class="camera">
+                        <img src="./svg/zoom.svg" alt="camera" />
+                      </div>
+                      <div class="testimonials-p">
+                        <span class="test-span-1"
+                          >Weekly Standup Recording</span
+                        >
+                        <span class="test-span-2"
+                          >Notes: refactor auth flow,roll out A/B test to 10% of
+                          traffic, monitor error spikes...</span
+                        >
+                      </div>
+                    </div>
+                    <div style="margin-left: 105px">
+                      <button class="open-but">Open</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial1">
+                  <div class="testimonials-inner">
+                    <div class="help-div">
+                      <div class="camera">
+                        <img src="./svg/desing.svg" alt="camera" />
+                      </div>
+                      <div class="testimonials-p">
+                        <span class="test-span-1">Design Review</span>
+                        <span class="test-span-2"
+                          >Action items: icon pass, empty states, progressive
+                          disclosure on settings panel.</span
+                        >
+                      </div>
+                    </div>
+                    <div style="margin-left: 105px">
+                      <button class="open-but">Open</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-               <div class="card-team">
-            <div class="time-title">
-              <h2>Insights</h2>
-              <span>This week</span>
-            </div>
-            <div class="card-Quick">
+            <div class="card-team">
+              <div class="time-title">
+                <h2>Insights</h2>
+                <span>This week</span>
+              </div>
+              <div class="card-Quick">
                 <div>
                   <h2 class="h2-quick">Quick Filters</h2>
                 </div>
                 <div>
-              <button  class="first-btn-card">Mine</button>
-              <button class="btn-time" style="height: 34px; width: 104px;">Unassigned</button>
-              <button class="btn-time" style="height: 34px; width: 83px;">Overdue</button>
-              <button class="btn-time" style="height: 34px; width: 80px;">Blocked</button>
-              <button class="btn-time" style="height: 34px; width: 144px;">Recently Updated</button>
-            </div>
-            </div>
-            <div class="Team">
+                  <button class="first-btn-card">Mine</button>
+                  <button class="btn-time" style="height: 34px; width: 104px">
+                    Unassigned
+                  </button>
+                  <button class="btn-time" style="height: 34px; width: 83px">
+                    Overdue
+                  </button>
+                  <button class="btn-time" style="height: 34px; width: 80px">
+                    Blocked
+                  </button>
+                  <button class="btn-time" style="height: 34px; width: 144px">
+                    Recently Updated
+                  </button>
+                </div>
+              </div>
+              <div class="Team">
                 <h2 class="team-h2">Team</h2>
-              <div class="pinck-div">
-                <div class="green-content">
-                <div class="pinck"></div>
-                <div class="text-team-card">
-                  <h2>Alex</h2>
-                  <span>3 items due today</span>
+                <div class="pinck-div">
+                  <div class="green-content">
+                    <div class="pinck"></div>
+                    <div class="text-team-card">
+                      <h2>Alex</h2>
+                      <span>3 items due today</span>
+                    </div>
+                  </div>
+                  <button>ping</button>
                 </div>
+                <div class="green-div">
+                  <div class="green-content">
+                    <div class="green"></div>
+                    <div class="text-team-card">
+                      <h2>Jordan</h2>
+                      <span>Out of office t...</span>
+                    </div>
+                  </div>
+                  <button>ping</button>
                 </div>
-                <button>ping</button>
-              </div>
-              <div class="green-div">
-                <div class="green-content">
-                <div class="green"></div>
-                <div class="text-team-card">
-                  <h2>Jordan</h2>
-                  <span>Out of office t...</span>
-                </div>
-                </div>
-                <button>ping</button>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </main>
+      <footer>
+        <div class="footer">
+        <p> © 2025 Flexboard Inc</p>
+         <p>Made with pure Flexbox</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
