@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Progress Bar States</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9fbfd;
+       margin: 0 auto;
+      color: #111827;
+       width: 1440px;
+height: 900px;
+    }
+
+.container{
+width: 1175px;
+height: 738px;
+margin: 0 auto;
+
+}
+
+
+    h2 {
+      text-align: center;
+      margin-bottom: 52px;
+font-weight: 700;
+font-style: Bold;
+font-size: 36px
+    }
+
+    h3{
+         padding-left: 14px;
+         margin-top: 13px;
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+line-height: 32px;
+    }
+
+    table {
+      width: 100%;
+      
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 10px 15px;
+      vertical-align: middle;
+    }
+
+    .label {
+      font-weight: bold;
+      width: 130px;
+      background-color: #ef4444;
+    }
+
+    .bar {
+      background-color: #e5e7eb;
+      border-radius: 22px;
+    }
+
+    .fill {
+      display: block;
+      height: 100%;
+      border-radius: 20px;
+    }
+
+    /* === Sizes === */
+    .xs  { height: 2px; }
+    .sm  { height: 4px; }
+    .md  { height: 10px; }
+    .lg  { height: 12px; }
+    .xl  { height: 16px; }
+    .jumbo { height: 25px; }
+    .mega  { height: 34px; }
+
+    .red     { background-color: #ef4444; width: 20%; }
+    .orange  { background-color: #f97316; width: 40%; }
+    .yellow  { background-color: #fbbf24; width: 60%; }
+    .green   { background-color: #22c55e; width: 100%; }
+     .blue    { background-color: #3b82f6; width: 30%; }
+    .purple  { background-color: #a855f7; width: 40%; }
+    .pink    { background-color: #ec4899; width: 50%; }
+    .lilac {background-color: rgba(99, 102, 241, 1); width: 100%;}
+
+    .coloe-9{background-color: rgba(16, 185, 129, 1); width: 10%;}
+    .coloe-10{background-color: rgba(20, 184, 166, 1); width: 30%;}
+    .coloe-11{background-color: rgba(6, 182, 212, 1); width: 70%;}
+    .coloe-12{background-color: rgba(14, 165, 233, 1); width: 100%;}
+    .coloe-13{background-color: rgba(244, 63, 94, 1); width: 30%;}
+    .coloe-14{background-color: rgba(245, 158, 11, 1); width: 50%;}
+    .coloe-15{background-color: rgba(132, 204, 22, 1); width: 75%;}
+    .coloe-16{background-color: rgba(139, 92, 246, 1); width: 100%;}
+    .coloe-17{background-color: rgba(220, 38, 38, 1); width: 7%;}
+    .coloe-18{background-color: rgba(234, 88, 12, 1); width: 30%;}
+    .coloe-19{background-color: rgba(22, 163, 74, 1); width: 85%;}
+    .coloe-20{background-color: rgba(37, 99, 235, 1); width: 100%;}
+    .coloe-21{background: linear-gradient(90deg, #A855F7 0%, #EC4899 100%); width: 60%;} 
+    .coloe-22{background: linear-gradient(90deg, #3B82F6 0%, #06B6D4 100%); width: 100%;}
+    .coloe-23{background: linear-gradient(90deg, #4ADE80 0%, #3B82F6 50%, #9333EA 100%); width: 75%;}
+
+
+  </style>
+</head>
+<body>
+    <div class="container">
+  <h2>Progress Bar States</h2>
+  
+  <table>
+   <h3>Extra Small</h3>
+    <tr>
+      <td><div class="bar xs"><span class="fill red"></span></div></td>
+      <td><div class="bar xs"><span class="fill orange"></span></div></td>
+      <td><div class="bar xs"><span class="fill yellow"></span></div></td>
+      <td><div class="bar xs"><span class="fill green"></span></div></td>
+    </tr>
+</table>
+        <table>
+     <h3> Small</h3>
+    <tr>
+      <td><div class="bar sm"><span class="fill blue"></span></div></td>
+      <td><div class="bar sm"><span class="fill purple"></span></div></td>
+      <td><div class="bar sm"><span class="fill pink"></span></div></td>
+      <td><div class="bar sm"><span class="fill lilac"></span></div></td>
+    </tr>
+  </table>
+
+      <table>
+     <h3>Medium</h3>
+    <tr>
+      <td><div class="bar md"><span class="fill coloe-9"></span></div></td>
+      <td><div class="bar md"><span class="fill coloe-10"></span></div></td>
+      <td><div class="bar md"><span class="fill coloe-11"></span></div></td>
+      <td><div class="bar md"><span class="fill coloe-12"></span></div></td>
+    </tr>
+  </table>
+      <table>
+     <h3>Large</h3>
+    <tr>
+      <td><div class="bar lg"><span class="fill coloe-13"></span></div></td>
+      <td><div class="bar lg"><span class="fill coloe-14"></span></div></td>
+      <td><div class="bar lg"><span class="fill coloe-15"></span></div></td>
+      <td><div class="bar lg"><span class="fill coloe-16"></span></div></td>
+    </tr>
+  </table>
+      <table>
+     <h3>Extra Large</h3>
+    <tr>
+      <td><div class="bar xl"><span class="fill coloe-17"></span></div></td>
+      <td><div class="bar xl"><span class="fill coloe-18"></span></div></td>
+      <td><div class="bar xl"><span class="fill coloe-19"></span></div></td>
+      <td><div class="bar xl"><span class="fill coloe-20"></span></div></td>
+    </tr>
+  </table>
+      <table>
+     <h3>Jumbo</h3>
+    <tr>
+      <td><div class="bar jumbo"><span class="fill coloe-21"></span></div></td>
+      <td><div class="bar jumbo"><span class="fill coloe-22"></span></div></td>
+    </tr>
+  </table>
+      <table>
+     <h3>mega</h3>
+    <tr>
+      <td><div class="bar mega"><span class="fill coloe-23"></span></div></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
