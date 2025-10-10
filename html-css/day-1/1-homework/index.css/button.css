@@ -16,7 +16,13 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.container{
+    margin-left: 15px;
+  padding: 12px;
+}
+
 h1{
+  margin-bottom: 10px;
 width: 306px;
 height: 38px;
 font-weight: 700;
@@ -52,12 +58,16 @@ background-color: rgba(220, 53, 69, 1);
 }
 
 .buto4{
-    border: none;
+  border: none;
 width: 107px;
 height: 48px;
-border-radius: 8px rgba(0, 123, 255, 1);
-border-width: 2px;
+border-radius: 8px;
+border: 2px solid rgba(0, 123, 255, 1);
+color: rgba(0, 123, 255, 1);
+}
 
+.buto-colar{
+  color: white;
 }
 
 .buto5{
@@ -65,5 +75,30 @@ border-width: 2px;
     width: 115px;
 height: 44px;
 border-radius: 8px;
+margin-top: 10px;
 background-color: rgba(0, 86, 210, 1);
 }
+
+.buto1, .buto2, .buto3, .buto4{
+  cursor: pointer;
+}
+
+.buto1:hover{
+   background-color: #3388ff;
+}
+
+.buto2:hover{
+   background-color: #3388ff;
+}
+
+.buto3:hover{
+   background-color: rgba(0, 102, 255, 0.15);
+    border-color: #3388ff;
+    color: #3388ff;
+}
+
+.buto4:hover{
+   background-color: #0066ff;
+    box-shadow: 0 0 12px rgba(0, 102, 255, 0.6);
+}
+
