@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter.woff2') format('woff2'),
+       url('fonts/Inter.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1{
+width: 306px;
+height: 38px;
+font-weight: 700;
+font-style: Bold;
+font-size: 31px;
+line-height: 100%;
+vertical-align: middle;
+}
+
+.buto1{
+border: none;
+width: 108px;
+height: 44px;
+border-radius: 8px;
+background-color: rgba(0, 123, 255, 1);
+}
+
+.buto2{
+ border: none;
+width: 130px;
+height: 44px;
+border-radius: 8px;
+background-color: rgba(108, 117, 125, 1);
+}
+
+.buto3{
+border: none;
+width: 104px;
+height: 44px;
+border-radius: 8px;
+background-color: rgba(220, 53, 69, 1);
+
+}
+
+.buto4{
+    border: none;
+width: 107px;
+height: 48px;
+border-radius: 8px rgba(0, 123, 255, 1);
+border-width: 2px;
+
+}
+
+.buto5{
+    border: none;
+    width: 115px;
+height: 44px;
+border-radius: 8px;
+background-color: rgba(0, 86, 210, 1);
+}

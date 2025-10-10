@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+width: 1152px;
+height: 856px;
+margin: 0 auto;
+border: 2px solid black;
+text-align: center;
+}
+
+
+.box {
+  display: inline-block;
+ width: 560px;
+height: 380px;
+border-radius: 12px;
+background-color: rgba(243, 244, 246, 1);
+
+}
+
+.box h2{
+font-weight: 700;
+font-style: Bold;
+font-size: 19px;
+line-height: 28px;
+}
