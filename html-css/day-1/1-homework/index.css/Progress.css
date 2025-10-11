@@ -85,18 +85,18 @@ section {
 .bar.mega { height: 34px; }
 
 
-.fill.red    { background-color: #ef4444; width: 20%; }
-.fill.orange { background-color: #f97316; width: 40%; }
+.fill.red    { background-color: #ef4444; width: 16%; }
+.fill.orange { background-color: #f97316; width: 36%; }
 .fill.yellow { background-color: #fbbf24; width: 60%; }
 .fill.green  { background-color: #22c55e; width: 100%; }
 
-.fill.blue   { background-color: #3b82f6; width: 30%; }
+.fill.blue   { background-color: #3b82f6; width: 20%; }
 .fill.purple { background-color: #a855f7; width: 40%; }
-.fill.pink   { background-color: #ec4899; width: 50%; }
+.fill.pink   { background-color: #ec4899; width: 62%; }
 .fill.lilac  { background-color: #6366f1; width: 100%; }
 
 .fill.color-9  { background-color: #10b981; width: 10%; }
-.fill.color-10 { background-color: #14b8a6; width: 30%; }
+.fill.color-10 { background-color: #14b8a6; width: 35%; }
 .fill.color-11 { background-color: #06b6d4; width: 70%; }
 .fill.color-12 { background-color: #0ea5e9; width: 100%; }
 
@@ -105,7 +105,7 @@ section {
 .fill.color-15 { background-color: #84cc16; width: 75%; }
 .fill.color-16 { background-color: #8b5cf6; width: 100%; }
 
-.fill.color-17 { background-color: #dc2626; width: 7%; }
+.fill.color-17 { background-color: #dc2626; width: 5%; }
 .fill.color-18 { background-color: #ea580c; width: 30%; }
 .fill.color-19 { background-color: #16a34a; width: 85%; }
 .fill.color-20 { background-color: #2563eb; width: 100%; }
