@@ -4,52 +4,42 @@
   box-sizing: border-box;
 }
 
-
+/* FONTS */
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Thin.woff2') format('woff2');
   font-weight: 100;
-  font-style: normal;
 }
-
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Light.woff2') format('woff2');
   font-weight: 300;
-  font-style: normal;
 }
-
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Regular.woff2') format('woff2');
   font-weight: 400;
-  font-style: normal;
 }
-
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Medium.woff2') format('woff2');
   font-weight: 500;
-  font-style: normal;
 }
-
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Bold.woff2') format('woff2');
   font-weight: 700;
-  font-style: normal;
 }
-
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Black.woff2') format('woff2');
   font-weight: 900;
-  font-style: normal;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+  font-family: 'Roboto', sans-serif;
 }
+
 
 .container {
   width: 1440px;
@@ -57,7 +47,7 @@ body{
   margin: 0 auto;
 }
 
-.container > div {
+.container > section {
   margin: 30px;
   width: 1376px;
   border-radius: 14px;
@@ -65,38 +55,9 @@ body{
   padding: 20px;
 }
 
-.input p {
-  display: inline-block;
-  margin-left: 10px;
-  vertical-align: middle;
-  font-weight: 400;
-  font-size: 16px;
-  color: rgba(15, 23, 42, 1);
-  padding-bottom: 15px;
-}
-
-.input span {
-  color: rgba(71, 85, 105, 1);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 100%;
-}
-
-.chek-list {
-  height: 206px;
-}
-
-.Menu-List {
-  height: 457px;
-}
-
-.Stepper {
-  height: 355px;
-}
 
 h2 {
   font-weight: 700;
-  font-style: Bold;
   font-size: 24px;
   line-height: 100%;
   margin-bottom: 20px;
@@ -104,110 +65,134 @@ h2 {
 }
 
 
-input{
- width: 21px;
-  height: 21px;
-  border-radius: 5px;
+.checklist {
+  height: 206px;
 }
 
-.green {
-  border: 2px solid rgba(34, 197, 94, 1);
+.task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.task input {
+  width: 21px;
+  height: 21px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.task input.green {
+  border-color: rgba(34, 197, 94, 1);
   appearance: none;
   -webkit-appearance: none;
 }
 
-.div-color,
-.Stepper-text {
-  display: inline-block;
-  vertical-align: top; 
+.task label {
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(15, 23, 42, 1);
+  cursor: pointer;
 }
 
-.div-color{
-    width: 28px;
-height: 28px;
-border-radius: 8px;
-background-color: rgba(34, 197, 94, 1);
-font-size: 16px;
-line-height: 100%;
+.task span {
+  color: rgba(71, 85, 105, 1);
+  font-size: 14px;
 }
 
-.Stepper-text h3{
-font-weight: 700;
-font-style: Bold;
+
+.stepper {
+  height: 355px;
 }
 
-.Stepper-text p{
-font-weight: 400;
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 1334px;
+  height: 60px;
+  padding: 15px 0 5px 5px;
+  border-left: 7px solid rgba(226, 232, 240, 1);
+  margin-bottom: 5px;
 }
 
-.card-content{
-    padding-top: 15px;
-    padding-left: 5px;
-    margin-bottom: 5px;
-    width: 1334px;
-height: 60px;
-border-left:  7px solid rgba(226, 232, 240, 1);
+.status {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
 }
 
-.green-div{
-    background-color: rgba(34, 197, 94, 1);
+.status.green-div {
+  background-color: rgba(34, 197, 94, 1);
 }
 
-.orange{
-    background-color: rgba(245, 158, 11, 1);
+.status.orange {
+  background-color: rgba(245, 158, 11, 1);
 }
 
-.blue{
-    background-color: rgba(37, 99, 235, 1);
+.status.blue {
+  background-color: rgba(37, 99, 235, 1);
 }
 
-.red{
-    background-color: rgba(239, 68, 68, 1);
+.status.red {
+  background-color: rgba(239, 68, 68, 1);
 }
 
-.Card-menu{
-    width: 1334px;
-height: 374px;
-border-radius: 12px;
-border: 1px solid rgba(226, 232, 240, 1);
+.step-text h3 {
+  font-weight: 700;
+  font-size: 16px;
 }
 
-.div-list{
-  width: 100%;
-height: 38px;
-background-color: rgba(248, 250, 252, 1);
-border-bottom: 2px solid rgba(229, 231, 235, 1);
+.step-text p {
+  font-weight: 400;
+  font-size: 14px;
 }
 
-.div-list h2{
-font-weight: 700;
-font-style: Bold;
-padding-left: 15px;
-padding-top: 10px;
-font-size: 16px;
-color: rgba(71, 85, 105, 1);
+
+.menu-list {
+  height: 457px;
 }
 
-.line{
- border-bottom: 2px solid rgba(229, 231, 235, 1);
+.menu-card {
+  width: 1334px;
+  height: 374px;
+  border-radius: 12px;
+  border: 1px solid rgba(226, 232, 240, 1);
 }
 
-.div-list-1{
-    width: 100%;
- padding-left: 15px;
- padding-top: 10px;
- height: 58px;
+.menu-header {
+  background-color: rgba(248, 250, 252, 1);
+  border-bottom: 2px solid rgba(229, 231, 235, 1);
+  padding: 10px 15px;
 }
 
-.div-list-1 p{
-   margin-top: 3px;
-font-weight: 400;
-font-size: 14px;
-color: rgba(100, 116, 139, 1);
+.menu-header h3 {
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(71, 85, 105, 1);
 }
 
-.div-list-1 span{
-color: rgba(15, 23, 42, 1);
-font-weight: 400;
-font-size: 15px
+.menu-item {
+  padding: 10px 15px;
+  height: 58px;
+}
+
+.menu-item.line {
+  border-bottom: 2px solid rgba(229, 231, 235, 1);
+}
+
+.menu-item span {
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(15, 23, 42, 1);
+}
+
+.menu-item p {
+  margin-top: 3px;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(100, 116, 139, 1);
 }

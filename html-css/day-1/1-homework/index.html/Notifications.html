@@ -1,80 +1,95 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Toast Notifications</title>
     <link rel="stylesheet" href="../index.css/Notifications.css" />
   </head>
   <body>
-    <div class="container">
-      
-        <h1>Toast Notifications</h1>
-        <div class="first-div">
-          <div class="box">
-              <h2>Success Toast</h2>
-              <div class="green green-color">
-                <span>Success</span>
-                <p>Your changes have been saved successfully.</p>
-              </div>
-              <div class="green-border border-green-color">
-                <span>Operation Completed</span>
-                <p>File uploaded successfully to your account.</p>
-              </div>
-              <div class="and-green end-green-color">
-                <span>Payment Processed</span>
-                <p>Your payment of $29.99 was successful.</p>
-              </div>
+    <main class="container">
+      <h1>Toast Notifications</h1>
+
+      <section>
+        <article class="toast-box">
+          <h2>Success Toast</h2>
+
+          <div class="toast toast--success toast--soft">
+            <span>Success</span>
+            <p>Your changes have been saved successfully.</p>
           </div>
-          <div class="box">
-            <h2>Error Toasts</h2>
-            <div class="green  red-color">
-              <span>Error</span> 
-              <p>Failed to save changes. Please try again.</p>
-            </div>
-            <div class="green-border  border-red-color">
-              <span>Connection Failed</span>
-              <p>Unable to connect to server. Check your internet connection.</p>
-            </div>
-            <div class="and-green  end-red-color">
-              <span>Authentication Error</span>
-              <p>Your session has expired. Please log in again.</p>
-            </div>
+
+          <div class="toast toast--success toast--border">
+            <span>Operation Completed</span>
+            <p>File uploaded successfully to your account.</p>
           </div>
-        </div>
-        <div class="div-2">
-          <div class="box">
-            <h2>Warning Toast</h2>
-            <div class="green  yellow-color">
-              <span>Warning</span>
-              <p>You have unsaved changes that will be lost.</p>
-            </div>
-            <div class="green-border border-yellow-color ">
-              <span>Storage Almost Full</span>
-              <p>You're using 95% of your storage space.</p>
-            </div>
-            <div class="and-green  end-yellow-color">
-              <span>Subscription Expiring</span>
-              <p>Your subscription expires in 3 days.</p>
-            </div>
+
+          <div class="toast toast--success toast--solid">
+            <span>Payment Processed</span>
+            <p>Your payment of $29.99 was successful.</p>
           </div>
-          <div class="box">
-            <h2>Info Toast</h2>
-            <div class="green  blue-color">
-              <span>Information</span>
-              <p>New features are now available in your dashboard.</p>
-            </div>
-            <div class="green-border  border-blue-color">
-              <span>System Update</span>
-              <p>Scheduled maintenance will occur tonight at 2:00 AM..</p>
-            </div>
-            <div class="and-green end-blue-color">
-              <span>New Message</span>
-              <p>You have 3 new messages in your inbox..</p>
-            </div>
+        </article>
+
+        <article class="toast-box">
+          <h2>Error Toasts</h2>
+
+          <div class="toast toast--error toast--soft">
+            <span>Error</span>
+            <p>Failed to save changes. Please try again.</p>
           </div>
-        
-      </div>
-    </div>
+
+          <div class="toast toast--error toast--border">
+            <span>Connection Failed</span>
+            <p>Unable to connect to server. Check your internet connection.</p>
+          </div>
+
+          <div class="toast toast--error toast--solid">
+            <span>Authentication Error</span>
+            <p>Your session has expired. Please log in again.</p>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <article class="toast-box">
+          <h2>Warning Toast</h2>
+
+          <div class="toast toast--warning toast--soft">
+            <span>Warning</span>
+            <p>You have unsaved changes that will be lost.</p>
+          </div>
+
+          <div class="toast toast--warning toast--border">
+            <span>Storage Almost Full</span>
+            <p>You're using 95% of your storage space.</p>
+          </div>
+
+          <div class="toast toast--warning toast--solid">
+            <span>Subscription Expiring</span>
+            <p>Your subscription expires in 3 days.</p>
+          </div>
+        </article>
+
+        <article class="toast-box">
+          <h2>Info Toast</h2>
+
+          <div class="toast toast--info toast--soft">
+            <span>Information</span>
+            <p>New features are now available in your dashboard.</p>
+          </div>
+
+          <div class="toast toast--info toast--border">
+            <span>System Update</span>
+            <p>Scheduled maintenance will occur tonight at 2:00 AM.</p>
+          </div>
+
+          <div class="toast toast--info toast--solid">
+            <span>New Message</span>
+            <p>You have 3 new messages in your inbox.</p>
+          </div>
+        </article>
+      </section>
+    </main>
   </body>
 </html>

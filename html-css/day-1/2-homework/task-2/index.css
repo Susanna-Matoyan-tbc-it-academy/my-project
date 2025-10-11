@@ -4,21 +4,16 @@
   box-sizing: border-box;
 }
 
-
 @font-face {
   font-family: 'Inter';
   src: url('../fonts/Inter-Regular.woff2') format('woff2');
   font-weight: 400;
-  font-style: normal;
 }
-
 @font-face {
   font-family: 'Inter';
   src: url('../fonts/Inter-Bold.woff2') format('woff2');
   font-weight: 700;
-  font-style: normal;
 }
-
 @font-face {
   font-family: 'Inter';
   src: url('../fonts/Inter-Italic.woff2') format('woff2');
@@ -26,101 +21,83 @@
   font-style: italic;
 }
 
-body{
-    font-family: 'Inter', sans-serif;
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fbfd;
 }
 
 .container {
   width: 1440px;
-  height: 715px;
   margin: 0 auto;
+  padding: 20px 0;
 }
 
 .card {
-  width: 1408px;
-  height: 109px;
+  width: 100%;
+  max-width: 1408px;
   border-left: 7px solid rgba(25, 118, 210, 1);
-  margin: 10px auto;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  margin: 10px auto;
+  padding: 16px 15px;
+}
+.card h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.card p {
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(15,23,42,1);
 }
 
-.card h2,
-.orange-card p,
-.green-card {
-  padding-top: 16px;
-  margin-bottom: 19px;
-}
-
-.card h2,
-.card p,
-.orange-card p,
-.green-card {
-  margin-left: 15px;
-}
 
 .orange-card {
-  width: 1408px;
-  height: 52px;
-  background-color: rgba(255, 243, 224, 1);
-  border: 2px dashed rgba(255, 152, 0, 1) ;
+  width: 100%;
+  max-width: 1408px;
+  background-color: rgba(255,243,224,1);
+  border: 2px dashed rgba(255,152,0,1);
+  border-radius: 10px;
   margin: 10px auto;
+  padding: 10px 15px;
 }
-
-.orange {
-  width: 100px;
-  background-color: rgba(255, 152, 0, 1);
-  color: rgba(255, 255, 255, 1);
-}
-
-.text-style {
-  height: 24px;
+.orange-card button {
+  border: none;
   border-radius: 3px;
   font-weight: 400;
   font-size: 15px;
+  padding: 2px 6px;
+  margin-left: 3px;
+  cursor: pointer;
 }
-
-.yellow {
-  width: 84px;
-  color: rgba(51, 51, 51, 1);
-  background-color: rgba(255, 255, 0, 1);
-}
-
-.red {
-  width: 46px;
-  height: 21px;
-  background-color: rgba(229, 57, 53, 1);
-  color: rgba(255, 255, 255, 1);
-  border: 3px;
-  font-size: 13px;
-  font-weight: 400;
-}
+.orange-card .orange { background-color: rgba(255,152,0,1); color: #fff; }
+.orange-card .yellow { background-color: yellow; color: #333; }
+.orange-card .red { background-color: rgba(229,57,53,1); color: #fff; }
 
 .green-card {
-  width: 1408px;
-  height: 174px;
-  background-color: rgb(232, 245, 233);
-  border: 2px solid rgba(67, 160, 71, 1);
+  width: 100%;
+  max-width: 1408px;
+  display: flex;
+  gap: 15px;
+  margin: 10px auto;
+  padding: 15px 0;
+  background-color: rgb(232,245,233);
+  border: 2px solid rgba(67,160,71,1);
+  border-radius: 10px;
 }
-
-button {
-  border: none;
-}
-
-.green-card > div {
+.green-card-item {
   width: 152px;
   height: 122px;
+  background-color: #fff;
+  border: 2px solid #ccc;
   border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
-  font-style: Bold;
   font-size: 16px;
-  line-height: 120px;
+  color: rgba(67,160,71,1);
   text-align: center;
-  color: rgba(67, 160, 71, 1);
-  border: 2px solid rgba(204, 204, 204, 1);
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  margin-left: 15px;
-  display: inline-block;
-  vertical-align: middle;
 }
+

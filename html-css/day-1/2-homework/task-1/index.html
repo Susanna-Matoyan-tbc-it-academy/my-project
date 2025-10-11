@@ -1,103 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
-    <div class="container">
-        <div class="chek-list">
-            <h2>Checklist</h2>
-            <div class="input-div">
-                <div class="input">
-                <input class="green" value="git" type="checkbox">
-                 <p>Initialize repo <span>(git init)</span></p>
-                </div>
-            </div>
-              <div class="input-div">
-                <div class="input">
-                <input value="git" type="checkbox">
-                 <p>Set up CI </p>
-                </div>
-            </div>
-              <div class="input-div">
-                <div class="input">
-                <input value="git" type="checkbox">
-                 <p>Write unit tests </p>
-                </div>
-            </div>
-              <div class="input-div">
-                <div class="input">
-                <input value="git" type="checkbox">
-                 <p>Deploy preview environment</p>
-                </div>
-            </div>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main class="container">
+
+      
+      <section class="checklist">
+        <h2>Checklist</h2>
+
+        <article class="task">
+          <input id="task1" class="green" type="checkbox" />
+          <label for="task1">Initialize repo <span>(git init)</span></label>
+        </article>
+
+        <article class="task">
+          <input id="task2" type="checkbox" />
+          <label for="task2">Set up CI</label>
+        </article>
+
+        <article class="task">
+          <input id="task3" type="checkbox" />
+          <label for="task3">Write unit tests</label>
+        </article>
+
+        <article class="task">
+          <input id="task4" type="checkbox" />
+          <label for="task4">Deploy preview environment</label>
+        </article>
+      </section>
+
+      
+      <section class="stepper">
+        <h2>Stepper</h2>
+
+        <article class="step">
+          <div class="status green-div"></div>
+          <div class="step-text">
+            <h3>Create ticket</h3>
+            <p>Describe scope and acceptance criteria.</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="status orange"></div>
+          <div class="step-text">
+            <h3>Implement feature</h3>
+            <p>Waiting on API schema.</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="status blue"></div>
+          <div class="step-text">
+            <h3>Write tests</h3>
+            <p>Aim for 90%+ coverage.</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="status red"></div>
+          <div class="step-text">
+            <h3>Ship</h3>
+            <p>Blocked by release freeze.</p>
+          </div>
+        </article>
+      </section>
+
+      
+      <section class="menu-list">
+        <h2>Menu List</h2>
+
+        <div class="menu-card">
+          <header class="menu-header">
+            <h3>Profile</h3>
+          </header>
+
+          <div class="menu-item line">
+            <span>Account</span>
+            <p>Change email, password</p>
+          </div>
+
+          <div class="menu-item line">
+            <span>Notifications</span>
+            <p>Email, in-app</p>
+          </div>
+
+          <div class="menu-item line">
+            <span>Security</span>
+            <p>2FA, devices</p>
+          </div>
+
+          <header class="menu-header">
+            <h3>Workspace</h3>
+          </header>
+
+          <div class="menu-item line">
+            <span>Members</span>
+            <p>Invite, roles</p>
+          </div>
+
+          <div class="menu-item">
+            <span>Billing</span>
+            <p>Plan, invoices</p>
+          </div>
         </div>
-        <div class="Stepper">
-            <h2>Stepper</h2>
-            <div class="card-content">
-            <div class="div-color green-div"></div>
-            <div class="Stepper-text">
-                <h3>Create ticket</h3>
-              <p>Describe scope and acceptance criteria.</p>
-            </div>
-            </div>
-              <div class="card-content">
-            <div class="div-color orange"></div>
-            <div class="Stepper-text">
-                <h3>Implement feature</h3>
-              <p>Waiting on API schema.</p>
-            </div>
-            </div>
-              <div class="card-content">
-            <div class="div-color blue"></div>
-            <div class="Stepper-text">
-                <h3>Write tests</h3>
-              <p>Aim for 90%+ coverage.</p>
-            </div>
-            </div>
-              <div class="card-content">
-            <div class="div-color red"></div>
-            <div class="Stepper-text">
-                <h3>Ship</h3>
-              <p>Blocked by release freeze.</p>
-            </div>
-            </div>
-        </div>
-        <div class="Menu-List">
-            <h2>Menu List</h2>
-            <div class="Card-menu">
-            <div class="div-list">
-                <h2>Profile</h2>
-            </div>
-               <div class="div-list-1 line">
-                <span>Account</span>
-                <p>Change email, password</p>
-            </div>
-             <div class="div-list-1 line">
-                <span>Notifications</span>
-                <p>Email, in-app</p>
-            </div>
-             <div class="div-list-1 line">
-                <span>Security</span>
-                <p>2FA, devices</p>
-            </div>
-            <div class="div-list">
-                <h2>Workspace</h2>
-            </div>
-              <div class="div-list-1 line">
-                <span>Members</span>
-                <p>Invite, roles</p>
-            </div>
-              <div class="div-list-1">
-                <span>Billing</span>
-                <p>Plan, invoices</p>
-            </div>
-            </div>
-            
-        </div>
-    </div>
-</body>
+      </section>
+
+    </main>
+  </body>
 </html>
