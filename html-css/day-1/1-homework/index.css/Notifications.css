@@ -56,7 +56,7 @@ h2 {
   color: rgba(17, 24, 39, 1);
 }
 
-/* Карточка */
+
 .toast-box {
   text-align: start;
   display: inline-block;
@@ -69,7 +69,7 @@ h2 {
   margin: 15px;
 }
 
-/* Общий вид уведомления */
+
 .toast {
   width: 494px;
   border-radius: 8px;
@@ -93,7 +93,7 @@ h2 {
   line-height: 20px;
 }
 
-/* Типы уведомлений */
+
 .toast--soft {
   border: 1px solid;
 }
@@ -106,7 +106,7 @@ h2 {
   color: #fff;
 }
 
-/* Цветовые схемы */
+
 .toast--success.toast--soft {
   background-color: rgba(187, 247, 208, 1);
   border-color: rgba(34, 197, 94, 1);
