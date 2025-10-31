@@ -10,7 +10,11 @@
     { "src": "day-8/**/*", "use": "@vercel/static" },
     { "src": "html-css/**/*", "use": "@vercel/static" },
     { "src": "html and css project/**/*", "use": "@vercel/static" },
-    { "src": "inventory/**/*", "use": "@vercel/static" }
+    { "src": "inventory/**/*", "use": "@vercel/static" },
+    {
+  "ignore": ["**/svg/*", "**/img/*", "**/images/*"]
+}
+    
   ],
   "routes": [
     { "src": "/day-1/(.*)", "dest": "/day-1/$1" },
@@ -23,6 +27,11 @@
     { "src": "/day-8/(.*)", "dest": "/day-8/$1" },
     { "src": "/html-css/(.*)", "dest": "/html-css/$1" },
     { "src": "/html and css project/(.*)", "dest": "/html and css project/$1" },
-    { "src": "/inventory/(.*)", "dest": "/inventory/$1" }
-  ]
+    { "src": "/inventory/(.*)", "dest": "/inventory/$1" },
+    {
+  "ignore": ["**/svg/*", "**/img/*", "**/images/*"]
 }
+  ]
+  
+}
+
