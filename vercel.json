@@ -24,8 +24,6 @@
     { "src": "/html-css/(.*)", "dest": "/html-css/$1" },
     { "src": "/html and css project/(.*)", "dest": "/html and css project/$1" },
     { "src": "/inventory/(.*)", "dest": "/inventory/$1" }
-  ],
-
-  "ignore": ["**/svg/*", "**/img/*"]
+  ]
 
 }
