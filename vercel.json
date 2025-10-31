@@ -1,16 +1,16 @@
 {
   "builds": [
-    { "src": "day-1/**", "use": "@vercel/static" },
-    { "src": "day-2/**", "use": "@vercel/static" },
-    { "src": "day-3/**", "use": "@vercel/static" },
-    { "src": "day-4/**", "use": "@vercel/static" },
-    { "src": "day-5/**", "use": "@vercel/static" },
-    { "src": "day-6/**", "use": "@vercel/static" },
-    { "src": "day-7/**", "use": "@vercel/static" },
-    { "src": "day-8/**", "use": "@vercel/static" },
-    { "src": "html-css/**", "use": "@vercel/static" },
-    { "src": "html and css project/**", "use": "@vercel/static" },
-    { "src": "inventory/**", "use": "@vercel/static" }
+    { "src": "day-1/**/*", "use": "@vercel/static" },
+    { "src": "day-2/**/*", "use": "@vercel/static" },
+    { "src": "day-3/**/*", "use": "@vercel/static" },
+    { "src": "day-4/**/*", "use": "@vercel/static" },
+    { "src": "day-5/**/*", "use": "@vercel/static" },
+    { "src": "day-6/**/*", "use": "@vercel/static" },
+    { "src": "day-7/**/*", "use": "@vercel/static" },
+    { "src": "day-8/**/*", "use": "@vercel/static" },
+    { "src": "html-css/**/*", "use": "@vercel/static" },
+    { "src": "html and css project/**/*", "use": "@vercel/static" },
+    { "src": "inventory/**/*", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/day-1/(.*)", "dest": "/day-1/$1" },
